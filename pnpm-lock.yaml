@@ -29,6 +29,9 @@ importers:
       nuxt:
         specifier: ^3.14.1592
         version: 3.14.1592(@parcel/watcher@2.5.0)(@types/node@22.10.1)(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.28.0)(sass-embedded@1.81.0)(terser@5.36.0)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.1)(sass-embedded@1.81.0)(terser@5.36.0))
+      vue-flatpickr-component:
+        specifier: ^11
+        version: 11.0.5(vue@3.5.13(typescript@5.7.2))
     devDependencies:
       sass-embedded:
         specifier: ^1.81.0
@@ -1907,6 +1910,9 @@ packages:
     resolution: {integrity: sha512-/3FfIa8mbrg3xE7+wAhWeV+bd7L2Mof+xtZb5dRDKZ+wDvYJK4WDYeIOuOhre5Yv5aQObZrlbRmk3RTSiuQBtw==}
     engines: {node: '>=18'}
     hasBin: true
+
+  flatpickr@4.6.13:
+    resolution: {integrity: sha512-97PMG/aywoYpB4IvbvUJi0RQi8vearvU0oov1WW3k0WZPBMrTQVqekSX5CjSG/M4Q3i6A/0FKXC7RyAoAUUSPw==}
 
   flatted@3.3.2:
     resolution: {integrity: sha512-AiwGJM8YcNOaobumgtng+6NHuOqC3A7MixFeDafM3X9cIUM+xUXoS5Vfgf+OihAYe20fxqNM9yPBXJzRtZ/4eA==}
@@ -4070,6 +4076,12 @@ packages:
 
   vue-devtools-stub@0.1.0:
     resolution: {integrity: sha512-RutnB7X8c5hjq39NceArgXg28WZtZpGc3+J16ljMiYnFhKvd8hITxSWQSQ5bvldxMDU6gG5mkxl1MTQLXckVSQ==}
+
+  vue-flatpickr-component@11.0.5:
+    resolution: {integrity: sha512-Vfwg5uVU+sanKkkLzUGC5BUlWd5wlqAMq/UpQ6lI2BCZq0DDrXhOMX7hrevt8bEgglIq2QUv0K2Nl84Me/VnlA==}
+    engines: {node: '>=14.13.0'}
+    peerDependencies:
+      vue: ^3.2.0
 
   vue-router@4.5.0:
     resolution: {integrity: sha512-HDuk+PuH5monfNuY+ct49mNmkCRK4xJAV9Ts4z9UFc4rzdDnxQLyCMGGc8pKhZhHTVzfanpNwB/lwqevcBwI4w==}
@@ -6353,6 +6365,8 @@ snapshots:
       to-regex-range: 5.0.1
 
   flat@6.0.1: {}
+
+  flatpickr@4.6.13: {}
 
   flatted@3.3.2: {}
 
@@ -9012,6 +9026,11 @@ snapshots:
       vue: 3.5.13(typescript@5.7.2)
 
   vue-devtools-stub@0.1.0: {}
+
+  vue-flatpickr-component@11.0.5(vue@3.5.13(typescript@5.7.2)):
+    dependencies:
+      flatpickr: 4.6.13
+      vue: 3.5.13(typescript@5.7.2)
 
   vue-router@4.5.0(vue@3.5.13(typescript@5.7.2)):
     dependencies:

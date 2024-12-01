@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@iconify-json/akar-icons':
+        specifier: ^1.2.1
+        version: 1.2.1
+      '@iconify-json/fluent-color':
+        specifier: ^1.2.1
+        version: 1.2.1
       '@nuxt/content':
         specifier: ^2.13.4
         version: 2.13.4(ioredis@5.4.1)(magicast@0.3.5)(nuxt@3.14.1592(@parcel/watcher@2.5.0)(@types/node@22.10.1)(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.28.0)(sass-embedded@1.81.0)(terser@5.36.0)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.1)(sass-embedded@1.81.0)(terser@5.36.0)))(rollup@4.28.0)(vue@3.5.13(typescript@5.7.2))
@@ -496,6 +502,12 @@ packages:
     engines: {node: '>=10'}
     peerDependencies:
       vue: ^3.2.0
+
+  '@iconify-json/akar-icons@1.2.1':
+    resolution: {integrity: sha512-b2qj2P2LxVUSl7vP+/1FDeF5+DL6IpKw5yon+Qszb8rWejKr/uQn6dV9yGE+pGaKkFaxGhPNF75EsCNLmrbm0Q==}
+
+  '@iconify-json/fluent-color@1.2.1':
+    resolution: {integrity: sha512-7i5ACPfwLzDbubrYZGkBrw+6fQxiN57GZ5qUdPt7ZDhe0izDDXsx6UWwwrtl1mmB4RydK7XJQlG2hpwNWMH+LA==}
 
   '@iconify-json/heroicons@1.2.1':
     resolution: {integrity: sha512-TkKfS5U27kE5MXmSGLzPoz95BP5VA9xEJXwJFwmPMVLX+xyWq0OkoiWTUXB0uAoQODpb8BaRpzSydItrq9fIRA==}
@@ -4546,6 +4558,14 @@ snapshots:
     dependencies:
       '@tanstack/vue-virtual': 3.10.9(vue@3.5.13(typescript@5.7.2))
       vue: 3.5.13(typescript@5.7.2)
+
+  '@iconify-json/akar-icons@1.2.1':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/fluent-color@1.2.1':
+    dependencies:
+      '@iconify/types': 2.0.0
 
   '@iconify-json/heroicons@1.2.1':
     dependencies:

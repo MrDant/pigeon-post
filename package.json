@@ -9,6 +9,8 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
+    "@iconify-json/akar-icons": "^1.2.1",
+    "@iconify-json/fluent-color": "^1.2.1",
     "@nuxt/content": "^2.13.4",
     "@nuxt/ui": "^2.19.2",
     "crypto-js": "^4.2.0",

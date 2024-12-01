@@ -4,6 +4,11 @@ export default defineNuxtConfig({
   colorMode: {
     preference: "light",
   },
+  icon: {
+    provider: "iconify",
+    serverBundle: false,
+    clientBundle: { scan: true },
+  },
   components: true,
   content: {
     documentDriven: true,

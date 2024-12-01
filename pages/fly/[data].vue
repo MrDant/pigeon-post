@@ -42,14 +42,6 @@
   </div>
 </template>
 <script setup>
-import LZString from "lz-string";
-import CryptoJS from "crypto-js";
-const secretKey = "sdwlksldf";
-// const data = useRoute().params.data;
-// const [day, month, year] = dateString.split('-').map(Number);
-// new Date(year, month - 1, day);
-
-// const test = compress(data);
 const data = computed(() => {
   const v = decompress(useRoute().params.data);
   v.start = new Date(v.start);
@@ -94,34 +86,4 @@ const time = computed(() => {
     minutes ? padZero(minutes) + "m" : ""
   } ${padZero(seconds)}s`;
 });
-
-const jsonObj = {
-  start: new Date(2024, 10, 10),
-  end: new Date(2024, 11, 2),
-  message:
-    "Buongiorno bella signorina,Purtroppo, non ho trovato un piccione viaggiatore d'oro, spero che mi perdonerai. Tuttavia, ora che abbiamo usato un piccione, possiamo passare all'email. Ecco la mia: mael.dantuono@gmail.com",
-};
-
-console.log(compress(jsonObj));
-
-function compress(jsonObj) {
-  const jsonString = JSON.stringify(jsonObj);
-  const compressed = LZString.compressToBase64(jsonString);
-  const encrypted = CryptoJS.AES.encrypt(compressed, secretKey).toString();
-
-  // Encoder la chaîne cryptée en Base64URL (compatible URL)
-  return encrypted.replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
-}
-
-function decompress(encodedForUrl) {
-  // Décryptage pour tester le retour
-  const decodedFromUrl = encodedForUrl.replace(/-/g, "+").replace(/_/g, "/");
-  const bytes = CryptoJS.AES.decrypt(decodedFromUrl, secretKey);
-  const decrypted = bytes.toString(CryptoJS.enc.Utf8);
-
-  // Décompresser la chaîne
-  const decompressed = LZString.decompressFromBase64(decrypted);
-
-  return JSON.parse(decompressed);
-}
 </script>

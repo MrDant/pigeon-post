@@ -10,6 +10,12 @@
   },
   "dependencies": {
     "@nuxt/content": "^2.13.4",
+    "@nuxt/ui": "^2.19.2",
+    "crypto-js": "^4.2.0",
+    "lz-string": "^1.5.0",
     "nuxt": "^3.14.1592"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.81.0"
   }
 }

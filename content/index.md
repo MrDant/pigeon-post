@@ -36,4 +36,4 @@ Remplissez le formulaire ci-dessous pour créer un lien accompagné de l'animati
 
 ---
 
-### Testez dès maintenant et envoyez un message inoubliable !
+**Testez dès maintenant et envoyez un message inoubliable !**

@@ -15,11 +15,17 @@
       >
         <UIcon name="i-akar-icons-home-alt1" />
         <div class="border-b-4 border-dotted flex-1 relative">
-          <img
-            src="/pigeon.png"
+          <div
             class="absolute w-20 -translate-x-1/2 top-1/2 -translate-y-1/2 pb-3"
             :style="{ left: diff + '%' }"
-          />
+          >
+            <NuxtImg src="/pigeon.png" />
+            <NuxtImg
+              src="/christmass-hat.png"
+              v-if="isChristmass"
+              class="absolute top-[10%] left-[65%] w-8"
+            />
+          </div>
         </div>
         <UIcon name="i-akar-icons-location" />
       </div>
@@ -50,6 +56,10 @@ const data = computed(() => {
 });
 
 const today = ref(new Date());
+
+const isChristmass = computed(
+  () => today.value.getDay() < 26 && today.value.getMonth() == 11
+);
 
 onMounted(() => {
   setInterval(() => (today.value = new Date()), 1000);

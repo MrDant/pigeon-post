@@ -5,8 +5,7 @@ description: Envoyez des messages comme si un pigeon voyageur les livrait !
 
 # Bienvenue sur **PigeonExpress** 🕊️
 
-Vous rêvez d'envoyer un message avec une touche d'originalité ?  
-**PigeonExpress** transforme vos messages en une expérience unique, livrée par un pigeon voyageur virtuel.
+Vous rêvez d'envoyer un message avec une touche d'originalité ?\:br**PigeonExpress** transforme vos messages en une expérience unique, livrée par un pigeon voyageur virtuel.
 
 Que ce soit pour partager un message avec vos amis, surprendre un proche ou simplement pour le plaisir, notre plateforme est là pour vous.
 
@@ -16,7 +15,8 @@ Que ce soit pour partager un message avec vos amis, surprendre un proche ou simp
 
 Remplissez le formulaire ci-dessous pour créer un lien accompagné de l'animation d'un pigeon voyageur apportant votre message.
 
-<Formulaire></Formulaire>
+::formulaire
+::
 
 ---
 
@@ -36,4 +36,6 @@ Remplissez le formulaire ci-dessous pour créer un lien accompagné de l'animati
 
 ---
 
-**Testez dès maintenant et envoyez un message inoubliable !**
+::div{.text-center}
+\*\*Testez dès maintenant et envoyez un message inoubliable !\*\*
+::

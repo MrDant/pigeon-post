@@ -19,8 +19,8 @@
             class="absolute w-20 -translate-x-1/2 top-1/2 -translate-y-1/2 pb-3"
             :style="{ left: diff + '%' }"
           >
-            <NuxtImg src="/pigeon.png" />
-            <NuxtImg
+            <img src="/pigeon.png" />
+            <img
               src="/christmass-hat.png"
               v-if="isChristmass"
               class="absolute top-[10%] left-[65%] w-8"

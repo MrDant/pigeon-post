@@ -19,10 +19,11 @@ export default defineNuxtConfig({
       components: true,
     },
   },
-  modules: ["@nuxt/content", "@nuxt/ui", "@nuxt/image"],
+  modules: ["@nuxt/content", "@nuxt/ui"],
   css: ["~/assets/main.scss"],
   routeRules: {
     "/": { prerender: true },
   },
   compatibilityDate: "2024-11-30",
+  image: { domains: ["piccione.divertydev.com"] },
 });

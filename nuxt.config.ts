@@ -29,6 +29,13 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Piccone",
+      meta: [
+        {
+          name: "description",
+          content:
+            "Bienvenue sur mon site. Découvrez notre fonctionnalité unique de messages via pigeon voyageur numérique !",
+        },
+      ],
     },
   },
 });

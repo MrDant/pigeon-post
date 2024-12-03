@@ -19,9 +19,10 @@
             class="absolute w-20 -translate-x-1/2 top-1/2 -translate-y-1/2 pb-3"
             :style="{ left: diff + '%' }"
           >
-            <img src="/pigeon.png" />
+            <img src="/pigeon.png" alt="pigeon" />
             <img
               src="/christmass-hat.png"
+              alt="christmass-hat"
               v-if="isChristmass"
               class="absolute top-[10%] left-[65%] w-8"
             />

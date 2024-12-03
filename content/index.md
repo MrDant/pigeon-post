@@ -1,8 +1,3 @@
----
-title: Bienvenue sur PigeonExpress
-description: Envoyez des messages comme si un pigeon voyageur les livrait !
----
-
 # Bienvenue sur **PigeonExpress** 🕊️
 
 Vous rêvez d'envoyer un message avec une touche d'originalité ?\:br**PigeonExpress** transforme vos messages en une expérience unique, livrée par un pigeon voyageur virtuel.

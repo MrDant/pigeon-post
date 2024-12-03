@@ -28,12 +28,19 @@ export default defineNuxtConfig({
   image: { domains: ["piccione.divertydev.com"] },
   app: {
     head: {
-      title: "Piccone",
+      title: "PigeonExpress",
+      script: [
+        {
+          src: "https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js",
+          async: true,
+          customElement: "amp-auto-ads",
+        },
+      ],
       meta: [
         {
           name: "description",
           content:
-            "Bienvenue sur mon site. Découvrez notre fonctionnalité unique de messages via pigeon voyageur numérique !",
+            "Envoyez des messages comme si un pigeon voyageur les livrait !",
         },
       ],
     },
